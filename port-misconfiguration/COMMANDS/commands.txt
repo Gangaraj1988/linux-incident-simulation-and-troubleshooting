@@ -1,0 +1,5 @@
+ps -ef | grep app.py
+ss -tulnp | grep 5000
+ss -tulnp | grep 9999
+curl http://localhost:5000
+curl http://localhost:9999

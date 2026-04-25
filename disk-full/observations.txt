@@ -1,0 +1,11 @@
+Application process was running but logs started failing.
+
+Error observed: "No space left on device".
+
+Disk usage was at 100%.
+
+Application could not write logs due to disk full condition.
+
+After removing large files, disk space was freed.
+
+Application resumed normal operation.

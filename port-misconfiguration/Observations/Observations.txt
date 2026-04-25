@@ -1,0 +1,9 @@
+Application process was running but users could not access it.
+
+Port 5000 was expected but not listening.
+
+Application was actually running on port 9999.
+
+Connection to port 5000 failed while port 9999 succeeded.
+
+This indicates a port misconfiguration issue.

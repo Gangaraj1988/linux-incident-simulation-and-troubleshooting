@@ -1,0 +1,3 @@
+top
+ps -eo pid,cmd,%cpu --sort=-%cpu | head
+kill <pid>

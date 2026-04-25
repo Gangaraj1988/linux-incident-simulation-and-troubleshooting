@@ -1,0 +1,11 @@
+Application process was running but users reported it was not working.
+
+Log access failed with "Permission denied" error.
+
+Directory permissions were set to 000, which restricted all access.
+
+Due to this, the application could not read or write required files and logs.
+
+Although the process was running, the application was effectively unusable.
+
+This was identified as a permission-based outage.

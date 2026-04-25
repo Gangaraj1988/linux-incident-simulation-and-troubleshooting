@@ -1,0 +1,7 @@
+ps -ef | grep app.sh
+tail -n 10 app.log
+df -h
+fallocate -l 80M file1
+dd if=/dev/zero of=bigfile bs=1M count=60
+pkill -f app.sh
+rm file* bigfile

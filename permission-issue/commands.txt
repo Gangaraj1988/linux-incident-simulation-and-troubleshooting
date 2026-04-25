@@ -1,0 +1,4 @@
+ps -ef | grep app.sh
+tail -n 10 /opt/payment-app
+ls -ld /opt/payment-app
+chmod 755 /opt/payment-app

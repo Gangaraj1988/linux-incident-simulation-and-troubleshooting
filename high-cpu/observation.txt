@@ -1,0 +1,7 @@
+System became slow due to high CPU usage.
+
+Multiple cpu.sh processes were consuming 100% CPU.
+
+This was caused by an infinite loop script.
+
+After terminating the processes, CPU usage returned to normal and system performance improved.
