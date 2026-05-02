@@ -1,0 +1,8 @@
+sudo nano /etc/apache2/ports.conf
+sudo systemctl restart apache2
+curl http://localhost
+ss -tulnp | grep :8080
+curl http://localhost:8080
+sudo nano /etc/apache2/ports.conf
+sudo systemctl restart apache2
+curl http://localhost

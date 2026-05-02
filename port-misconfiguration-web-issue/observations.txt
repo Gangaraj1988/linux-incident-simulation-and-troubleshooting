@@ -1,0 +1,32 @@
+[Observation Start]
+
+1. Issue:
+Website not accessible on default port (80)
+
+2. Initial Check:
+curl http://localhost
+→ Failed to connect
+
+3. Service Check:
+systemctl status apache2
+→ Service was running
+
+4. Port Check:
+ss -tulnp
+→ Apache listening on port 8080 instead of 80
+
+5. Root Cause:
+Port misconfiguration in Apache config
+
+6. Verification:
+curl http://localhost:8080
+→ Website accessible
+
+7. Fix:
+Changed port from 8080 to 80 in ports.conf
+
+8. Final Verification:
+curl http://localhost
+→ Website working
+
+[Observation End]
