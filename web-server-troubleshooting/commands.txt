@@ -1,0 +1,10 @@
+systemctl status apache2
+ss -tulnp | grep 80
+cd /var/log/apache2
+tail -n 10 access.log
+tail -n 10 error.log
+sudo systemctl stop apache2
+curl http://localhost
+systemctl status apache2
+sudo systemctl start apache2
+curl http://localhost

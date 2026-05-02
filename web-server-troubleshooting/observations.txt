@@ -1,0 +1,16 @@
+User reported website not accessible on localhost.
+
+Checked Apache service status → service was inactive (dead)
+
+Checked port using ss → no service listening on port 80
+
+Checked logs → no recent activity
+
+Conclusion → Apache service was stopped
+
+Action → Started Apache service
+
+Verification:
+- Service status active
+- Port 80 listening
+- curl returned HTML response
