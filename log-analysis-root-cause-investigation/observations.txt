@@ -1,0 +1,28 @@
+[Observation Start]
+
+1. Issue:
+Apache service failed to restart after configuration change.
+
+2. Initial Check:
+Checked service status using:
+systemctl status apache2
+
+3. Log Investigation:
+Investigated logs using:
+journalctl -xeu apache2.service
+
+4. Root Cause Identification:
+Validated Apache configuration using:
+apache2ctl configtest
+
+Observed invalid directive inside apache2.conf
+
+5. Fix Applied:
+Removed invalid configuration entry from apache2.conf
+
+6. Verification:
+- apache2ctl configtest returned Syntax OK
+- Apache restarted successfully
+- curl verified website accessibility
+
+[Observation End]

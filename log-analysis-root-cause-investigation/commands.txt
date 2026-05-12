@@ -1,0 +1,9 @@
+sudo nano /etc/apache2/apache2.conf
+sudo systemctl restart apache2
+systemctl status apache2
+journalctl -xeu apache2.service
+apache2ctl configtest
+sudo nano /etc/apache2/apache2.conf
+apache2ctl configtest
+sudo systemctl restart apache2
+curl http://localhost
